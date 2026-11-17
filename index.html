@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f5f7">
+  <meta name="description" content="Apple mahsulotlari olamiga xush kelibsiz.">
+  <title>Apple — O‘ylanganidan ham yaxshiroq</title>
+  <link rel="preconnect" href="https://www.apple.com">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="animations.css">
+  <script src="navigation.js" defer></script>
+  <script src="carousel.js" defer></script>
+  <script src="animations.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div class="scrim" id="scrim"></div>
+  <header class="site-header">
+    <nav class="global-nav" aria-label="Asosiy navigatsiya">
+      <a class="apple-mark" href="#" aria-label="Apple bosh sahifa">
+        <svg viewBox="0 0 24 28" aria-hidden="true"><path d="M19.7 14.9c0-3.1 2.5-4.6 2.6-4.7-1.4-2.1-3.6-2.4-4.4-2.4-1.9-.2-3.7 1.1-4.7 1.1-1 0-2.5-1.1-4.1-1.1-2.1 0-4.1 1.2-5.2 3.1-2.2 3.8-.6 9.4 1.5 12.5 1 1.5 2.2 3.1 3.8 3 1.5-.1 2.1-1 4-1s2.4 1 4 1c1.7 0 2.7-1.5 3.7-3.1 1.2-1.7 1.7-3.4 1.7-3.5-.1 0-3.2-1.2-3.2-4.9ZM16.6 5.8c.8-1 1.4-2.4 1.2-3.8-1.2.1-2.7.8-3.6 1.8-.8.9-1.5 2.3-1.3 3.7 1.4.1 2.8-.7 3.7-1.7Z"/></svg>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#store">Do‘kon</a><a href="#mac">Mac</a><a href="#ipad">iPad</a>
+        <a href="#iphone">iPhone</a><a href="#watch">Watch</a><a href="#airpods">AirPods</a>
+        <a href="#entertainment">Ko‘ngilochar</a><a href="#accessories">Aksessuarlar</a><a href="#support">Yordam</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-button" id="searchToggle" aria-label="Qidirish" aria-expanded="false">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.7" cy="8.7" r="5.7"/><path d="m13 13 4.2 4.2"/></svg>
+        </button>
+        <button class="icon-button bag-button" id="bagToggle" aria-label="Xarid savati" aria-expanded="false">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4.2 6.5h11.6l.8 11H3.4l.8-11Z"/><path d="M7 7V5a3 3 0 0 1 6 0v2"/></svg>
+        </button>
+        <button class="mobile-menu-button" id="menuToggle" aria-label="Menyuni ochish" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </nav>
+    <div class="search-panel" id="searchPanel" aria-hidden="true">
+      <div class="search-inner">
+        <span class="search-symbol">⌕</span>
+        <input id="siteSearch" type="search" placeholder="apple.com saytida qidirish" aria-label="Saytdan qidirish">
+        <button id="searchClose" aria-label="Qidiruvni yopish">✕</button>
+      </div>
+      <p class="search-hint">Tezkor havolalar</p>
+      <a href="#iphone">iPhone modellari</a><a href="#mac">Mac kompyuterlari</a><a href="#ipad">iPad</a>
+    </div>
+    <div class="bag-panel" id="bagPanel" aria-hidden="true">
+      <strong>Savatingiz hozircha bo‘sh.</strong>
+      <p>Saqlangan mahsulotlaringiz shu yerda ko‘rinadi.</p>
+      <a href="#store">Do‘konni ko‘rish</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="announcement" id="store">
+      <p>Yaqinlaringizga unutilmas sovg‘a tanlang.</p>
+      <a href="#promos">Sovg‘alarni ko‘rish <span>›</span></a>
+    </section>
+
+    <section class="hero hero-duo reveal" id="iphone">
+      <div class="hero-copy hero-copy-dark">
+        <p class="eyebrow">Yangi avlod bilan tanishing</p>
+        <h1>iPhone Duo</h1>
+        <p class="hero-subtitle">Salom. Yangi imkoniyatlar bilan tanishing.</p>
+        <div class="cta-row">
+          <a class="button button-blue" href="#promos">Batafsil</a>
+          <a class="button button-outline" href="#promos">Sotib olish <span>›</span></a>
+        </div>
+      </div>
+      <img class="hero-image duo-image" src="https://www.apple.com/v/homepage/images/iphone-duo/a/hero_iphone_duo_animated__ggqp9olf1ii6_large.jpg" alt="iPhone Duo buklangan holatda qo‘lda ushlab turilgan" fetchpriority="high">
+    </section>
+
+    <section class="hero hero-pro reveal">
+      <div class="hero-copy hero-copy-light">
+        <p class="eyebrow">iPhone 18 Pro</p>
+        <h2>Pro darajasidan ham yuqori.</h2>
+        <p class="hero-subtitle">Har bir lahzada yanada kuchli imkoniyatlar.</p>
+        <div class="cta-row">
+          <a class="button button-blue" href="#promos">Batafsil</a>
+          <a class="button button-outline" href="#promos">Sotib olish <span>›</span></a>
+        </div>
+      </div>
+      <img class="hero-image pro-image" src="https://www.apple.com/v/homepage/images/iphone-18-pro/a/hero_iphone_18_pro__fqe1motd0ymy_large.jpg" alt="iPhone 18 Pro mahsulot tasviri" loading="lazy">
+    </section>
+
+    <section class="promo-grid" id="promos" aria-label="Apple mahsulotlari">
+      <article class="promo-card homeview reveal" id="home">
+        <div class="promo-copy">
+          <h2>Uy uchun yaratilgan.</h2>
+          <p>Apple HomeView bilan uyingiz yanada aqlli.</p>
+          <div class="cta-row"><a class="text-link" href="#accessories">Batafsil <span>›</span></a><a class="text-link" href="#accessories">Sotib olish <span>›</span></a></div>
+        </div>
+        <img src="https://www.apple.com/v/homepage/images/apple-homeview/a/promo_apple_homeview_animated__2tawhzlcoaau_large.jpg" alt="Apple HomeView aqlli uy qurilmalari" loading="lazy">
+      </article>
+      <article class="promo-card ipad-card reveal" id="ipad">
+        <div class="promo-copy">
+          <h2>iPad</h2>
+          <p>A16 chip tezligi. Endi ikki baravar boshlang‘ich xotira.</p>
+          <div class="cta-row"><a class="text-link" href="#accessories">Batafsil <span>›</span></a><a class="text-link" href="#accessories">Sotib olish <span>›</span></a></div>
+        </div>
+        <img src="https://www.apple.com/v/homepage/images/ipad/a/promo_ipad__d9p5bux2okuq_large.jpg" alt="Apple iPad va Magic Keyboard" loading="lazy">
+      </article>
+      <article class="promo-card watch-card reveal" id="watch">
+        <div class="promo-copy">
+          <p class="watch-brand"><span class="watch-mark">◉</span> WATCH</p>
+          <h2>Har bir yurak urishini his eting.</h2>
+          <p>Kiyiladigan qurilmada eng aniq yurak urishi kuzatuvi.</p>
+          <div class="cta-row"><a class="text-link" href="#accessories">Batafsil <span>›</span></a><a class="text-link" href="#accessories">Sotib olish <span>›</span></a></div>
+        </div>
+        <img src="https://www.apple.com/v/homepage/images/apple-watch-series-12/a/promo_apple_watch_series_12__gnlprtt8526a_large.jpg" alt="Apple Watch Series 12 aqlli soatlari" loading="lazy">
+      </article>
+      <article class="promo-card airpods-card reveal" id="airpods">
+        <div class="promo-copy">
+          <h2>AirPods Pro 3</h2>
+          <p>Quloq ichidagi faol shovqinni kamaytirishning yangi darajasi.</p>
+          <div class="cta-row"><a class="text-link" href="#accessories">Batafsil <span>›</span></a><a class="text-link" href="#accessories">Sotib olish <span>›</span></a></div>
+        </div>
+        <img src="https://www.apple.com/v/homepage/images/airpods-pro-3/a/promo_airpods_pro_3__e4755qofhnyq_large.jpg" alt="Oq rangli AirPods Pro 3 quloqchinlari" loading="lazy">
+      </article>
+    </section>
+
+    <section class="entertainment-section reveal" id="entertainment">
+      <div class="section-heading">
+        <div><p class="eyebrow">Apple xizmatlari</p><h2>Cheksiz taassurotlar.</h2></div>
+        <div class="carousel-controls">
+          <button class="round-control" data-carousel-prev="entertainmentTrack" aria-label="Oldingi slayd">‹</button>
+          <button class="round-control" data-carousel-next="entertainmentTrack" aria-label="Keyingi slayd">›</button>
+        </div>
+      </div>
+      <div class="carousel-viewport" data-carousel="entertainmentTrack" tabindex="0" aria-label="Ko‘ngilochar kontentlar karuseli">
+        <div class="carousel-track" id="entertainmentTrack">
+          <article class="ent-card ent-one"><div><span class="ent-kicker">Apple TV</span><h3>Har bir hikoya — yangi olam.</h3><a href="https://tv.apple.com/" target="_blank" rel="noopener">Tomosha qilish <span>›</span></a></div></article>
+          <article class="ent-card ent-two"><div><span class="ent-kicker">Apple Music</span><h3>Kayfiyatingizga mos ohang.</h3><a href="https://music.apple.com/" target="_blank" rel="noopener">Tinglash <span>›</span></a></div></article>
+          <article class="ent-card ent-three"><div><span class="ent-kicker">Apple Fitness+</span><h3>Harakatda bo‘ling. O‘zingizni kashf eting.</h3><a href="https://fitness.apple.com/" target="_blank" rel="noopener">Boshlash <span>›</span></a></div></article>
+          <article class="ent-card ent-four"><div><span class="ent-kicker">Apple Arcade</span><h3>O‘yin-kulgi shu yerdan boshlanadi.</h3><a href="https://www.apple.com/apple-arcade/" target="_blank" rel="noopener">O‘ynash <span>›</span></a></div></article>
+        </div>
+      </div>
+      <div class="carousel-dots" data-dots-for="entertainmentTrack" aria-label="Slaydni tanlash">
+        <button class="dot is-active" aria-label="1-slayd" data-slide="0"></button><button class="dot" aria-label="2-slayd" data-slide="1"></button><button class="dot" aria-label="3-slayd" data-slide="2"></button><button class="dot" aria-label="4-slayd" data-slide="3"></button>
+      </div>
+    </section>
+
+    <section class="mac-strip reveal" id="mac">
+      <div><p class="eyebrow">Mac oilasi</p><h2>Ishlash. Ijod qilish. Yaratish.</h2><p>Mac bilan g‘oyalaringizga keng yo‘l oching.</p><a class="text-link" href="https://www.apple.com/mac/" target="_blank" rel="noopener">Mac haqida <span>›</span></a></div>
+      <div class="mac-orbit" aria-hidden="true"><div class="mac-screen"><div class="mac-wallpaper"></div></div><div class="mac-base"></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="support">
+    <div class="footer-inner">
+      <p class="footer-note">Apple mahsulotlari, xizmatlari va xarid imkoniyatlari haqida muhim ma’lumotlar. Ushbu sahifa mustaqil namoyish loyihasi bo‘lib, Apple Inc. bilan rasmiy aloqaga ega emas.</p>
+      <div class="footer-columns">
+        <div><h3>Do‘kon</h3><a href="#store">Do‘kon</a><a href="#mac">Mac</a><a href="#ipad">iPad</a><a href="#iphone">iPhone</a><a href="#watch">Watch</a></div>
+        <div><h3>Mahsulotlar</h3><a href="#airpods">AirPods</a><a href="#home">Uy</a><a href="#accessories">Aksessuarlar</a><a href="#promos">Barcha takliflar</a></div>
+        <div><h3>Hisob</h3><a href="#support">Apple hisob qaydnomasi</a><a href="#support">Xaridlar tarixi</a><a href="#support">Savatcha</a></div>
+        <div><h3>Apple xizmatlari</h3><a href="#entertainment">Apple TV</a><a href="#entertainment">Apple Music</a><a href="#entertainment">Apple Fitness+</a><a href="#entertainment">Apple Arcade</a></div>
+        <div><h3>Yordam</h3><a href="https://support.apple.com/" target="_blank" rel="noopener">Yordam markazi</a><a href="#support">Yetkazib berish</a><a href="#support">Qaytarish va almashtirish</a><a href="#support">Bog‘lanish</a></div>
+      </div>
+      <p class="footer-shop">Batafsil ma’lumot olish uchun <a href="https://www.apple.com/" target="_blank" rel="noopener">Apple rasmiy sayti</a>ga o‘ting.</p>
+      <div class="footer-bottom"><span>Mualliflik huquqi © 2026 Apple Inc. Barcha huquqlar himoyalangan.</span><div><a href="#support">Maxfiylik</a><a href="#support">Foydalanish shartlari</a><a href="#support">Sayt xaritasi</a></div><span>O‘zbekiston</span></div>
+    </div>
+  </footer>
+</body>
+</html>
